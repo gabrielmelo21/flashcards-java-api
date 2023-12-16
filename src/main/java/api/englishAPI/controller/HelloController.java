@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 class HelloController {
     @GetMapping
     public String hello() {
-        return "Flashcards-Java-API is RUNNING! ";
+        return "Flashcards-Java-API is RUNNING!  ";
     }
 }

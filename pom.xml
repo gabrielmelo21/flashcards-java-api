@@ -39,11 +39,6 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
 
 	</dependencies>
 
@@ -77,18 +72,6 @@
 
 
 
-			<!-- Configuração do plugin Heroku -->
-			<plugin>
-				<groupId>com.heroku.sdk</groupId>
-				<artifactId>heroku-maven-plugin</artifactId>
-				<version>3.0.7</version>
-				<configuration>
-					<!-- Configuração do tipo de processo para aplicação standalone -->
-					<processTypes>
-						<web>java $JAVA_OPTS -cp target/classes:target/dependency/* api.englishAPI.EnglishApiApplication</web>
-					</processTypes>
-				</configuration>
-			</plugin>
 
 
 		</plugins>
