@@ -1,0 +1,3 @@
+[[buildpacks]]
+name = "heroku/java"
+version = "17"
