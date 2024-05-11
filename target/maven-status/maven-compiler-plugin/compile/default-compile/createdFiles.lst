@@ -1,0 +1,13 @@
+api\englishAPI\controller\FrequencyController.class
+api\englishAPI\dto\FrequencyDTO.class
+api\englishAPI\EnglishApiApplication.class
+api\englishAPI\model\Frequency.class
+api\englishAPI\repositories\FrequencyRepository.class
+api\englishAPI\controller\HelloController.class
+api\englishAPI\dto\WordsDTO.class
+api\englishAPI\service\WordsService.class
+api\englishAPI\repositories\WordsRepository.class
+api\englishAPI\configs\corsConfig.class
+api\englishAPI\model\Words.class
+api\englishAPI\controller\WordsController.class
+api\englishAPI\service\FrequencyService.class
