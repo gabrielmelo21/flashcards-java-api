@@ -1,4 +1,4 @@
-package api.englishAPI.controller;
+package api.englishAPI.utils;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

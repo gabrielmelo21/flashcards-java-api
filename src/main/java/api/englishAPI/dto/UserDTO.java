@@ -8,6 +8,6 @@ public record UserDTO(
         Long credits,
         Boolean vip,
         Boolean checkin,
-        String ip
+        String password
 ) {}
 

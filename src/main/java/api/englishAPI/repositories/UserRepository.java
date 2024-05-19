@@ -1,9 +1,13 @@
 package api.englishAPI.repositories;
 
 
-import api.englishAPI.model.User;
+import api.englishAPI.model.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository  extends JpaRepository<User, Long> {
+import java.util.UUID;
+
+public interface UserRepository  extends JpaRepository<Users, UUID> {
     boolean existsByEmail(String email);
+
+    Users findByEmail(String email);
 }

@@ -1,0 +1,5 @@
+
+
+1. Finalizar e criar o sistema de login no front, e
+2. sistema de checkin com apenas tabela do usuario
+3. associar o usuario aos cartões que ele é o owner (em words{smartcards rename} colocar o owner do card )

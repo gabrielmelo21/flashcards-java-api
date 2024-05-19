@@ -1,19 +1,18 @@
 package api.englishAPI.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 @Data
-public class User {
+public class Users {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id;
 
     @Column(name = "nome", nullable = false)
     private String nome;
@@ -25,7 +24,7 @@ public class User {
     private String email;
 
     @Column(name = "picture", nullable = false)
-    private String picuture;
+    private String picture;
 
     @Column(name = "credits", nullable = false)
     private Long credits;  // ad por creditos, referal, checkin, pre-pgo
@@ -33,24 +32,25 @@ public class User {
     @Column(name = "vip", nullable = false)
     private Boolean vip;  // 0 ads por mensalidade
 
-    @Column(name = "checkin", nullable = false)
+    @Column(name = "checkin")
     private Boolean checkin;
 
-    @Column(name = "ip", nullable = false)
-    private String ip;
+    @Column(name = "password")
+    private String password;
 
 
-    public User(String nome,
+
+    public Users(String nome,
                 String sobrenome,
                 String email,
                 String picture,
                 Long credits,
                 Boolean vip,
                 Boolean checkin,
-                String ip) {
+                String password) {
 
     }
-    public User(){
+    public Users(){
 
     }
 }
